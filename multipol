@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+#--*-coding:uftf-8 -*-
+
+class Animal(object):
+	__type=""
+	def __init__(self):
+		__type="None"
+	def running():
+		print("%s is running!")
+
+class Bird(object):
+	__type=""
+	def __init__(self):
+		self.__type="bird"
+	def flying():
+		print("%s is flying")
+
+class dog(Animal,bird):
+	def __init__(self):
+		self.__type="dog"
+		self.__legs=4
+	def running(self):
+		print("%s is running",self.__type)
+
+s=dog()
+s.running()
